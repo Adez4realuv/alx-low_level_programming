@@ -1,41 +1,41 @@
-#include "holberton.h"
+/*
+ * File: 9-fizz_buzz.c
+ * Auth: Brennan D Baraban
+ */
+
 #include <stdio.h>
 
 /**
- * main - Fizz for multiples of 3 and Buzz for multiples of 5 FizzBuzz for both
+ * main - Prints the numbers from 1-100, but for multiples of three,
+ *        Fizz is printed instead of the number, for multiples of five,
+ *        Buzz, and for multiples of both three and five, FizzBuzz.
  *
- *
- * Return: Always 0
+ * Return: Always 0.
  */
 int main(void)
 {
-	int x = 1;
+	int num;
 
-	while (x < 101)
+	for (num = 1; num <= 100; num++)
 	{
-		if (x % 3 == 0 && x % 5 == 0)
-		{
-			printf("%s", "FizzBuzz");
-		}
-		else if (x % 3 == 0)
-		{
-			printf("%s", "Fizz");
-		}
-		else if (x % 5 == 0)
-		{
-			printf("%s", "Buzz");
-		}
-		else
-		{
-			printf("%d", x);
-		}
+		if ((num % 3) == 0 && (num % 5) == 0)
+			printf("FizzBuzz");
 
-		if (x != 100)
-		{
+		else if ((num % 3) == 0)
+			printf("Fizz");
+
+		else if ((num % 5) == 0)
+			printf("Buzz");
+
+		else
+			printf("%d", num);
+
+		if (num == 100)
+			continue;
 		printf(" ");
-		}
-		x++;
 	}
+
 	printf("\n");
+
 	return (0);
 }
