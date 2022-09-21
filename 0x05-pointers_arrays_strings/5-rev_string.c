@@ -1,20 +1,3 @@
-
-kingmajor2k19
-/
-alx-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-alx-low_level_programming/0x05-pointers_arrays_strings/5-rev_string.c
-
-kingmajor2k19 revesre string
- 0 contributors
-25 lines (21 sloc)  363 Bytes
 #include "main.h"
 
 /**
